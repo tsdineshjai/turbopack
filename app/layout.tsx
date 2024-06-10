@@ -1,11 +1,15 @@
+import RecoilWrapper from "../store/recoilWrapper";
+
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body>
+				<RecoilWrapper>{children}</RecoilWrapper>
+			</body>
+		</html>
+	);
 }
